@@ -4,7 +4,7 @@ import (
 	"github.com/ayayaakasvin/gomig/internal/models"
 	"github.com/ayayaakasvin/gomig/internal/models/core/database"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 const (
