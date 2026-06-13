@@ -35,3 +35,4 @@ func (s3 *SQLite) ConnectionString() string {
 func (s3 *SQLite) Open() error {
 	return s3.BaseDatabase.Open(Driver, s3.ConnectionString())
 }
+// TODO:Fix sqlite

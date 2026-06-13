@@ -3,7 +3,6 @@ module github.com/ayayaakasvin/gomig
 go 1.25.0
 
 require (
-	github.com/fergusstrange/embedded-postgres v1.34.0
 	github.com/go-sql-driver/mysql v1.9.3
 	github.com/lib/pq v1.12.3
 	modernc.org/sqlite v1.51.0
@@ -21,7 +20,4 @@ require (
 	modernc.org/memory v1.11.0 // indirect
 )
 
-require (
-	filippo.io/edwards25519 v1.1.0 // indirect
-	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
-)
+require filippo.io/edwards25519 v1.1.0 // indirect

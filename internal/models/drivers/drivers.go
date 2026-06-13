@@ -5,13 +5,13 @@ import (
 	"github.com/ayayaakasvin/gomig/internal/models/core/database"
 	"github.com/ayayaakasvin/gomig/internal/models/drivers/mysql"
 	"github.com/ayayaakasvin/gomig/internal/models/drivers/postgresql"
-	"github.com/ayayaakasvin/gomig/internal/models/drivers/sqlite"
+	sqlite "github.com/ayayaakasvin/gomig/internal/models/drivers/sqlite"
 )
 
 var availableDrivers = map[string]struct{}{
 	postgresql.Driver: {},
 	mysql.Driver:      {},
-	sqlite3.Driver:    {},
+	sqlite.Driver:    {},
 }
 
 func ValidDriver(driver string) bool {
@@ -22,12 +22,12 @@ func ValidDriver(driver string) bool {
 var DriversMap map[string]func(*database.DatabaseConfig) models.DatabaseConnection = map[string]func(*database.DatabaseConfig) models.DatabaseConnection{
 	postgresql.Driver: postgresql.NewPostgreSQL,
 	mysql.Driver:      mysql.NewMySQL,
-	sqlite3.Driver:    sqlite3.NewSQLite,
+	sqlite.Driver:    sqlite.NewSQLite,
 }
 
 func AvailableDrivers() []string {
 	res := []string{}
-	for key, _ := range availableDrivers {
+	for key := range availableDrivers {
 		res = append(res, key)
 	}
 
