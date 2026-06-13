@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	Driver           = "sqlite3"
+	Driver           = "sqlite"
 	inMemoryLocation = ":memory:"
 )
 

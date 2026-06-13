@@ -5,7 +5,7 @@ import (
 	"github.com/ayayaakasvin/gomig/internal/models/core/database"
 	"github.com/ayayaakasvin/gomig/internal/models/drivers/mysql"
 	"github.com/ayayaakasvin/gomig/internal/models/drivers/postgresql"
-	"github.com/ayayaakasvin/gomig/internal/models/drivers/sqlite3"
+	"github.com/ayayaakasvin/gomig/internal/models/drivers/sqlite"
 )
 
 var availableDrivers = map[string]struct{}{

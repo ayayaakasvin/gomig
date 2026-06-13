@@ -49,7 +49,7 @@ Description:
   Runs database migrations
 
 Flags:
-  --driver      Database driver (postgres, mysql, sqlite3)
+  --driver      Database driver (postgres, mysql, sqlite)
   --host        Database host
   --port        Database port
   --user        Database user
