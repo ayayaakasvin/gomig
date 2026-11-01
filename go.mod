@@ -20,4 +20,4 @@ require (
 	modernc.org/memory v1.11.0 // indirect
 )
 
-require filippo.io/edwards25519 v1.1.0 // indirect
+require filippo.io/edwards25519 v1.1.1 // indirect
